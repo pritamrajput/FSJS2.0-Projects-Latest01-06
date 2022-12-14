@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif
+}
+body{
+    overflow-x: hidden;
+}
+
+/* This styling is for navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 70px;
+}
+nav .logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+nav div.logo img{
+    width: 70%;
+}
+.navbar-main .items .list-nav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color:#f8f9fa;
+}
+.contact-details{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    color:#f8f9fa;
+    position: relative;
+}
+
+div.contact-details img{
+    z-index: 2;
+    position: absolute;
+    left: 40%;
+}
+.contact-details div:nth-child(3){
+    z-index: 3;
+}
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F637EC;
+    width: 15%;
+    padding: 25px 0;
+}
+.hamburger div{
+    width: 50%;
+}
+.hamburger-inside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f8f9fa;
+    width: 80%;
+    margin: 5px;
+}
+
+
+/* This styling is for the credit card section */
+div.credit{
+    background-color: #000000;
+    display: flex;
+}
+div.credit .left{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 70px;
+    padding-bottom: 120px;
+}
+
+div.credit .simplify, .simplify-2{
+    color: #f8f9fa;
+    font-size: 1.9rem;
+}
+div.credit .simplify-2 span{
+    color: #F637EC;
+}
+div.credit .para-1, .para-2{
+    color: #adb5bd;
+}
+div.credit .para-1{
+    margin-top: 30px;
+}
+div.credit .para-2{
+    margin-bottom: 50px;
+}
+div.credit div.number-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+ div.credit div.number-1, .primary-btn{
+    color: #f8f9fa;
+ }
+ div.credit div.number-1 div.num-42{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ div.credit div.number-1 div.num-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ div.credit div.number-1 div.num-42 span{
+   color: #F637EC;
+ }
+ div.credit div.number-1 div.num-12 span{
+   color: #F637EC;
+ }
+ div.num-42 div{
+    padding-left: 10px;
+ }
+ div.num-12 div{
+    padding-left: 10px; 
+ }
+ div.credit .primary-btn{
+    margin-bottom: 30px;
+ }
+
+.primary-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+}
+.primary-btn .button{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.primary-btn span{
+    margin-left: 20px;
+    z-index: 2;
+}
+.primary-btn .arrow{
+    display: flex;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+.right .frontcards img{
+    width: 100%;
+    position: absolute;
+}
+.right .backcards img{
+    width: 100%;
+    position: absolute;
+    right: 120px;
+    top: -50px;
+}
+
+/* This style is written for sec-logo */
+.sec-logo div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color:#292929 ;
+}
+.sec-logo div img{
+    width: 8%;
+}
+
+
+/* This style os written for feature section */
+.feature-sect{
+    background-color: #000000;
+    color: #f8f9fa;
+    padding: 40px 70px;
+}
+.feature-sect .part-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+.feature-sect .part-2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.feature-sect .part-2 div:nth-child(odd){
+    background-color: #272727;
+}
+.feature-sect .part-2 div:nth-child(2){
+    background-color: #545352;
+}
+.feature-sect .part-2 div:nth-child(2){
+   position: relative;
+   bottom: 30px;
+}
+.feature-sect .part-1{
+    display: flex;
+}
+.part-1 .best-payment{
+    flex: 6;
+}
+.part-1 .services{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.feature-sect .part-1 .best-payment{
+    font-size: 4.1rem;
+    line-height: 4.8rem;
+    font-weight: 900;
+}
+.part-1 .best-payment span{
+    color: #F637EC;
+}
+
+/* This styling is for card-choice section */
+.card-choice{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fceffb;
+    padding: 60px 70px;
+    position: relative;
+}
+.v-card{
+    display: flex;
+    justify-content:center ;
+    background-color: #fceffb;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+.v-card img{
+    width: 70%;
+
+}
+.unique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 900;
+    z-index: 3;
+}
+.unique p:nth-child(2) {
+    color: #F637EC;
+}
+.editing-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+/* This is for writing media queries :-) */
+@media(max-width:768px){
+    .navbar-main .items .list-nav{
+        display: none;
+    }
+    .contact-details{
+        display: none;
+    }
+
+}
+
+@media(min-width:768px){
+   div.hamburger{
+    display: none;
+   }
+
+}
