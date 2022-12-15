@@ -16,6 +16,7 @@ nav{
     align-items: center;
     background-color: #000000;
     padding: 10px 70px;
+    width: 100vw;
 }
 nav .logo{
     display: flex;
@@ -77,6 +78,7 @@ div.contact-details img{
 div.credit{
     background-color: #000000;
     display: flex;
+    width: 100vw;
 }
 div.credit .left{
     background-color: #000000;
@@ -256,13 +258,12 @@ div.credit div.number-1{
     display: flex;
     justify-content:center ;
     background-color: #fceffb;
-    position: absolute;
-    top: 70%;
     width: 100%;
+    position: relative;
+    bottom: 40px;
 }
 .v-card img{
     width: 70%;
-
 }
 .unique{
     display: flex;
@@ -282,6 +283,143 @@ div.credit div.number-1{
     justify-content: center;
     align-items: center;
     z-index: 3;
+    text-align: center;
+}
+
+/* This is styling for testimonials */
+.testimonial{
+    background-color: #000000;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.customer,.customer-2{
+    text-align: center;
+    color: #fceffb;
+}
+.customer{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.customer-2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.customer span{
+    color: #F637EC;
+}
+.testimo-1{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 40px 70px;
+}
+.testimo-2{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 40px 70px;
+}
+.ratings-1 p, .ratings-2 p,.ratings-3 p, .ratings-4 p{
+    color: #f8f9fa;
+}
+.ratings-1, .ratings-2, .ratings-3, .ratings-4{
+    flex: 1;
+    padding: 10px 10px;
+    border: 1px solid #f8f9fa;
+    border-bottom: 0;
+}
+.ratings-2, .ratings-3, .ratings-4{
+    background-color: #272727;
+}
+.ratings-1{
+    background-color: #545352;
+}
+.swiping{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px ;
+}
+.swiping div{
+    width: 15px;
+    height: 15px;
+    background-color: #292929;
+    border-radius: 50%;
+}
+.swiping div:nth-child(1){
+    width: 70px;
+    border-radius: 999px;
+    background-color: #F637EC;
+}
+
+/* This styling is for customizing section */
+.customize{
+background-color: #000000;
+position: relative;
+width: 100vw;
+border: none;
+}
+.customer .image-1{
+    position: absolute;
+   width: 100%;
+}
+.customize .image-2{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.customize .image-2 img{
+    width: 100%;
+}
+.customize .image-1 img{
+    width: 100%;
+}
+.customize .text-1{
+    color: #f8f9fa;
+    position: absolute;
+    z-index: 4;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customize .text-1 .primary-btn{
+    margin-top: 50px;
+}
+.customize .text-1 h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.customize .text-1 h1 span{
+    color: #000000;
+}
+
+/*This styling is for the footer section */
+.footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 70px;
+}
+.footer .logo{
+    flex: 3.7;
+}
+.footer .logo img{
+    width: 23%;
+}
+.footer .list{
+    flex: 6.3;
+}
+.footer .list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #f8f9fa;
 }
 
 /* This is for writing media queries :-) */
@@ -289,15 +427,4 @@ div.credit div.number-1{
     .navbar-main .items .list-nav{
         display: none;
     }
-    .contact-details{
-        display: none;
-    }
-
-}
-
-@media(min-width:768px){
-   div.hamburger{
-    display: none;
-   }
-
 }
