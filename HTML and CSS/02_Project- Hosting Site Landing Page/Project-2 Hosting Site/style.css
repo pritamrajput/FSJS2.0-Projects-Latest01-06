@@ -16,13 +16,40 @@
     --color-8: #70b8f4;
     --color-9: #20557e;
 }
+.hamburger{
+    display: none;
+}
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
+    transition: all .50s ease;
+    background-color: var(--color-1);
+    padding: 28px 12%;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.list .items{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.list .items a{
+  color: var(--color-2);
+  text-decoration: none;
+  transition: all .50s ease; 
+  font-weight: 500; 
+  font-size: 1.1rem;
+  
+}
+.list .items a:hover{
+    color: var(--color-3);
 }
