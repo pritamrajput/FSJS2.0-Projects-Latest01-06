@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-1: #161616;
+    --color-2: #cdcccc;
+    --color-3: #0f8dfc;
+    --color-4: #3f3f3f;
+    --color-5: #6d6c6c;
+    --color-6: #125a99;
+    --color-7: #11436f;
+    --color-8: #70b8f4;
+    --color-9: #20557e;
 }
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
