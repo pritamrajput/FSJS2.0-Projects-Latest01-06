@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    transition: all .50s ease;
 }
 :root{
+    --color-0: #000000;
     --color-1: #161616;
     --color-2: #cdcccc;
     --color-3: #0f8dfc;
@@ -18,23 +20,51 @@
 }
 .hamburger{
     display: none;
+    cursor: pointer;
+}
+.hamburger .bar{
+  width: 18px;
+  height: 2px;
+  background-color: var(--color-3);
+  transition: 0.3s ease;
+}
+.hamburger #bar1{
+    transform: translateY(-4px);
+}
+.hamburger #bar3{
+    transform: translateY(4px);
+}
+.icon #bar1{
+    transform: translateY(2px) rotate(45deg);
+}
+.icon #bar3{
+    transform: translateY(-2px) rotate(-45deg);
+}
+.icon #bar2{
+    opacity: 0;
 }
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     width: 100%;
     transition: all .50s ease;
-    background-color: var(--color-1);
-    padding: 28px 12%;
+    background-color: var(--color-0);
+    padding: 22px 8%;
+}
+.list-ani #items-1{
+    right: 2%;
 }
 nav .logo{
     display: flex;
     align-items: center;
+}
+nav .logo img{
+    width: 110px;
 }
 
 .list .items{
@@ -42,14 +72,141 @@ nav .logo{
     list-style: none;
     gap: 30px;
 }
+.list .items .primary-btn-0{
+display: none;
+}
 .list .items a{
   color: var(--color-2);
   text-decoration: none;
   transition: all .50s ease; 
   font-weight: 500; 
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   
 }
 .list .items a:hover{
     color: var(--color-3);
+}
+.primary-btn button{
+   padding: 10px 30px;
+   border-radius: 30px;
+   background-color: var(--color-3);
+   color: #FFFFFF;
+   transition: all .50s ease;
+   font-weight: 500;
+   text-decoration: none;
+}
+.primary-btn button{ 
+    border-radius: 30px;
+    background-color: var(--color-3);
+    color: #FFFFFF;
+    border: 0;
+ }
+.primary-btn button:hover{
+ background-color: #FFFFFF;
+ color: #000000;
+ cursor: pointer;
+}
+
+
+
+/* Hero-section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-0);
+    padding: 22px 8%;
+}
+.hero-section .right{
+flex: 1;
+}
+.hero-section .left{
+   flex: 1; 
+}
+.hero-section .left h1{
+    color: #FFFFFF;
+    font-size: 3.2rem;
+}
+.hero-section .left h1 span{
+    color: var(--color-3);
+    font-style: italic;    
+}
+.hero-section .left .all-para{
+    color: var(--color-2);
+    margin-top: 30px;
+}
+.hero-section .left .button-2{
+    margin-top: 30px;
+}
+.left .button-2 button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--color-3);
+    color: #FFFFFF;
+    transition: all .50s ease;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--color-3);
+}
+.left .button-2 button:hover{
+    background-color: transparent;
+    color: #FFFFFF;
+    transition: all .50s ease;
+    font-weight: 500;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.hero-section .right img{
+    width: 90%;
+    height: 100%;
+}
+
+
+/* Media Queries */
+@media(max-width:794px){
+    .list .items{
+        gap: 15px;
+    }
+    .navbar{
+        padding: 22px 4%;
+    }
+    .hero-section{
+        padding: 22px 4%;
+    }
+}
+@media(max-width:670px){
+      /* .items{
+       position: absolute;
+       background-color: var(--color-0);
+       flex-direction: column;
+       align-items: center;
+       top: 100%;
+       right: 2%;
+       color: #FFFFFF;
+       width: 270px;
+       border-radius: 10px;
+       transition: all .50s ease;
+    } */
+    .list{
+        display: none;
+    }
+    .list .items a{
+        color:#FFFFFF ;
+      }
+      .list .items li:hover{
+        transform: translateY(5px);
+      }
+      .list .items li{
+        color:#FFFFFF ;
+        margin: 10px 0;
+      }
+      .list .items .primary-btn-0 button{
+        color:#FFFFFF ;
+        margin: 10px 0;
+      }
+      
+     .hamburger{
+        transition: all 0.5 ease;
+        display: flex;
+        flex-direction: column;
+     }
 }

@@ -17,8 +17,8 @@
             <div class="logo">
                 <img src="./assets/Logo.svg" alt="">
             </div>
-            <div class="list">
-                <ul class="items">
+            <div class="list" id="list-1">
+                <ul class="items" id="items-1" onclick="onClickMenu()">
                     <li class="list-item item-1"><a href="#">Hosting</a></li>
                     <li class="list-item item-2"><a href="#">Domain</a></li>
                     <li class="list-item item-3"><a href="">Features</a></li>
@@ -27,15 +27,38 @@
                 </ul>
             </div>
             <div class="primary-btn">
-                <button>Login</button>
+                <a href="#"><button>Login</button></a>
             </div>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div id="menu" class="hamburger" onclick="onClickMenu()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
             </div>
         </nav>
+ 
 
+        <!-- hero-section -->
+        <div class="hero-section">
+            <div class="left">
+                <div class="all-header">
+                   <h1>The best and</h1>
+                   <h1><span>cheapest</span> hosting</h1>
+                   <h1>for your website</h1>
+                </div>
+                <div class="all-para">
+                    <p>Hosting your website here is easy, access is fast, server</p>
+                    <p>security is very well maintained, and of course</p>
+                    <p>supported by reliable servers.</p>
+                </div>
+                <div class="button-2">
+                     <button>Get Started</button>
+                     <button>Try Start Free</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./assets/Illustrations/Group 238502.svg" alt="">
+            </div>
+        </div>
 
 
     </div>
