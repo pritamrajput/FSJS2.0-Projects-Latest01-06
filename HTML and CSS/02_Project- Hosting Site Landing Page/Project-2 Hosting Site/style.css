@@ -72,9 +72,6 @@ nav .logo img{
     list-style: none;
     gap: 30px;
 }
-.list .items .primary-btn-0{
-display: none;
-}
 .list .items a{
   color: var(--color-2);
   text-decoration: none;
@@ -160,6 +157,17 @@ flex: 1;
     height: 100%;
 }
 
+/* multiple logo section */
+.multiple-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 8%;
+    background-color: var(--color-1);
+}
+.multiple-logo .logos img{
+    width: 90px;
+}
+
 
 /* Media Queries */
 @media(max-width:794px){
@@ -203,10 +211,68 @@ flex: 1;
         color:#FFFFFF ;
         margin: 10px 0;
       }
-      
-     .hamburger{
+      .hamburger{
         transition: all 0.5 ease;
         display: flex;
         flex-direction: column;
      }
+}
+@media screen and (min-width:831px) and (max-width:1060px){
+    .hero-section .left h1{
+        font-size: 2.5rem;
+    }  
+    .hero-section .left .all-para{
+      font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:831px){
+    .hero-section .left h1{
+        font-size: 2.2rem;
+    }  
+    .hero-section .left .all-para{
+      font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:670px){
+    .hero-section .left h1{
+        font-size: 1.6rem;
+    }  
+    .hero-section .left .all-para{
+      font-size: 0.5rem;
+    }
+    .left .button-2 button{
+        padding: 10px 20px;
+        font-size: 0.6rem;
+    }
+    .primary-btn button{
+        padding: 7px 20px;
+        font-size: 0.6rem;
+     }
+     nav .logo img{
+        width: 90px;
+    }
+    .multiple-logo .logos img{
+        width: 85px;
+    }
+    .multiple-logo{
+        padding: 22px 5%;
+    }
+}
+@media screen and (max-width:485px){
+    .hero-section .left h1{
+        font-size: 1.1rem;
+    }  
+    .hero-section .left .all-para{
+      font-size: 0.35rem;
+    }
+    .left .button-2 button{
+        padding: 7px 12px;
+        font-size: 0.5rem;
+    }
+    nav .logo img{
+        width: 85px;
+    }
+    .multiple-logo .logos img{
+        width: 67px;
+    }
 }
