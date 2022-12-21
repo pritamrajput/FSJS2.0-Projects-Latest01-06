@@ -177,7 +177,7 @@ flex: 1;
     text-align: center;
 }
 .feature .all-para p:nth-child(1){
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 650;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -218,7 +218,121 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
  text-align: center;
  font-size: 0.8rem;
 }
+.feature-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 8%;
+    padding-bottom: 10%;
+}
+.feature-cards .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.feature-cards .left div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 35px;
+    gap: 20px;
+}
+.feature-cards .left div:nth-child(1){
+  background-color: var(--color-3);
+  color: #FFFFFF;
+}
+.feature-cards .left div:nth-child(n+2){
+    border: 1px solid var(--color-4);
+    color: var(--color-0);
+  }
+.feature-cards .left div p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.feature-cards .left div img{
+   width: 30px;
+}
+.feature-cards .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--color-0);
+    border-radius: 20px;
+}
+.feature-cards .right .rights{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 30px;
+    gap: 10px;
+    background-color: var(--color-1);
+}
+.feature-cards .right .rights div{
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background-color: #FFFFFF;
+}
+.feature-cards .right div p{
+    color: #FFFFFF;
+}
+.feature .business-para{
+    padding: 22px 8%;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
+/* price section */
+.price{
+    background-color: var(--color-0);
+    padding: 22px 6%;
+}
+.price .price-details{
+    display: flex;
+    gap: 20px;
+}
+.price .para{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+.arrow-left img, .arrow-right img{
+    height: 80%;
+    width: 90%;
+}
+.arrow-left, .arrow-right{
+   align-self: flex-end;
+}
+.hosting{
+    display: flex;
+    justify-content: space-between;
+}
+.price-details .plan1,.price-details .plan3{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.price-details .plan2{
+    background-color:var(--color-3);
+    border-radius: 20px;
+}
+.price-details .plan1 h1, .price-details .plan2 h1, .price-details .plan3 h1{
+    font-size: 1.5rem;
+}
+.plan1 .plan-details{
+    font-size: 0.8rem;
+}
+.plan2 .plan-details{
+    font-size: 0.8rem;
+}
+.plan3 .plan-details{
+    font-size: 0.8rem;
+}
 /* Media Queries */
 @media(max-width:794px){
     .list .items{
@@ -228,6 +342,13 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
         padding: 22px 4%;
     }
     .hero-section{
+        padding: 22px 4%;
+    }
+    .feature .all-para p:nth-child(1){
+        font-size: 2.2rem;
+        padding: 22px 4%;
+    }
+    .feature .cards{
         padding: 22px 4%;
     }
 }
@@ -266,6 +387,15 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
         display: flex;
         flex-direction: column;
      }
+     .feature .all-para p:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .feature .all-para p:nth-child(n+2){
+        font-size: 0.9rem;
+    }
+    .feature .business-para{
+        padding: 22px 4%;
+}
 }
 @media screen and (min-width:831px) and (max-width:1060px){
     .hero-section .left h1{
@@ -274,6 +404,9 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     .hero-section .left .all-para{
       font-size: 0.6rem;
     }
+    .feature .business-para{
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width:831px){
     .hero-section .left h1{
@@ -281,6 +414,9 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     }  
     .hero-section .left .all-para{
       font-size: 0.6rem;
+    }
+    .feature .business-para{
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width:670px){
@@ -307,6 +443,7 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     .multiple-logo{
         padding: 22px 5%;
     }
+
 }
 @media screen and (max-width:485px){
     .hero-section .left h1{
@@ -324,5 +461,83 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     }
     .multiple-logo .logos img{
         width: 67px;
+    }
+}
+@media screen and (max-width:533px){
+    .feature .all-para p:nth-child(1){
+        font-size: 1.4rem;
+    }
+    .feature .all-para p:nth-child(n+2){
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:413px){
+    .feature .all-para p:nth-child(1){
+        font-size: 1.1rem;
+    }
+    .feature .all-para p:nth-child(n+2){
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width:760px){
+    .feature .cards{
+        padding: 22px 4%;
+        flex-direction: column;
+        align-items:center ;
+    }
+    .remain-para{
+        text-align: center;
+        font-size: 0.5rem;
+       }
+       div.cards .cards-1,div.cards .cards-2,div.cards .cards-3{
+       
+        width: 220px;
+        height: 190px;
+    }
+}
+@media screen and (max-width:635px){
+    .feature .business-para{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:470px){
+    .feature .business-para{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:950px){
+    .feature-cards{
+       flex-direction: column;
+       gap: 10px;
+    }
+}
+@media screen and (min-width:583px) and (max-width:950px){
+    .feature-cards{
+        padding-left: 15%;
+        padding-right: 15%;
+     }
+}
+@media screen and (max-width:501px){
+    .feature-cards{
+        padding-right: 4%;
+        padding-left: 4%;
+     }
+    .feature-cards .left div p{
+        font-size: 0.9rem;
+    }
+    .feature-cards .left div img{
+       width: 25px;
+    }
+    .feature-cards .right div p{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:380px){
+    .feature-cards .left div p{
+        font-size: 0.7rem;
+    }
+
+    .feature-cards .right div p{
+        font-size: 0.6rem;
     }
 }
