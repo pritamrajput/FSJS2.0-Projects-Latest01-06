@@ -295,6 +295,7 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
 }
 .price .price-details{
     display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 .price .para{
@@ -315,24 +316,95 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
 }
 .price-details .plan1,.price-details .plan3{
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 250px;
 }
 .price-details .plan2{
     background-color:var(--color-3);
     border-radius: 20px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
 }
 .price-details .plan1 h1, .price-details .plan2 h1, .price-details .plan3 h1{
     font-size: 1.5rem;
 }
+.price-details .plan2 h1{
+    color: #FFFFFF;
+}
+ .plan1 .plan-para, .plan2 .plan-para, .plan3 .plan-para{
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.plan2 .plan-para{
+    color: #FFFFFF;
+}
 .plan1 .plan-details{
     font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
 }
 .plan2 .plan-details{
     font-size: 0.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: flex;
+    gap: 10px;
 }
 .plan3 .plan-details{
     font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
 }
+.plan1 .plan-details img, .plan2 .plan-details img, .plan3 .plan-details img{
+    width: 15px;
+}
+.plan1 span, .plan3 span{
+color: var(--color-5);
+font-size: 1rem;
+}
+.plan2 span{
+    color: var(--color-2);
+    font-size: 1rem;
+    }
+.plan1 button, .plan3 button{
+ border-radius: 30px;
+ border:1px solid #0f8dfc;
+ background-color: var(--color-3);
+ padding: 10px 10px;
+ color: #FFFFFF;
+ font-weight: 700;
+}
+.plan2 button{
+    border-radius: 30px;
+ border:1px solid #0f8dfc;
+ background-color: #FFFFFF;
+ padding: 10px 10px;
+ color: var(--color-3);
+ font-weight: 700; 
+}
+.plan1 .line, .plan3 .line{
+    background-color: #EDEADE;
+    height: 2px;
+    width: 100%;
+    border: 0;
+}
+.plan2 .line{
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 100%;
+    border: 0;
+}
+
 /* Media Queries */
 @media(max-width:794px){
     .list .items{
