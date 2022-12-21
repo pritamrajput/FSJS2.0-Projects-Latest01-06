@@ -55,6 +55,7 @@
     transition: all .50s ease;
     background-color: var(--color-0);
     padding: 22px 8%;
+    z-index: 300;
 }
 .list-ani #items-1{
     right: 2%;
@@ -223,6 +224,7 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     justify-content: space-between;
     padding: 22px 8%;
     padding-bottom: 10%;
+    gap: 20px;
 }
 .feature-cards .left{
     display: flex;
@@ -296,7 +298,10 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
 .price .price-details{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .price .para{
     text-align: center;
@@ -304,15 +309,18 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     font-size: 2.5rem;
 }
 .arrow-left img, .arrow-right img{
-    height: 80%;
-    width: 90%;
+    height:50%;
+    width: 60%;
 }
 .arrow-left, .arrow-right{
+    display: flex;
+    justify-content: center;
    align-self: flex-end;
 }
 .hosting{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .price-details .plan1,.price-details .plan3{
     background-color: #FFFFFF;
@@ -322,7 +330,7 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    width: 250px;
+    width: 260px;
 }
 .price-details .plan2{
     background-color:var(--color-3);
@@ -331,7 +339,7 @@ div.cards .cards-1 img,div.cards .cards-2 img,div.cards .cards-3 img{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 250px;
+    width: 260px;
 }
 .price-details .plan1 h1, .price-details .plan2 h1, .price-details .plan3 h1{
     font-size: 1.5rem;
@@ -404,7 +412,53 @@ font-size: 1rem;
     width: 100%;
     border: 0;
 }
-
+/* testimonials */
+.testimonials{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.testimonials .paragraph{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.testi{
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.testi::-webkit-scrollbar{
+    height: 5px;
+}
+.testi::-webkit-scrollbar-thumb{
+    background-color: var(--color-3);
+    border-radius: 100vw;
+}
+.testi::-webkit-scrollbar-track{
+    background-color: var(--color-2);
+    border-radius: 100vw;
+}
+.testi .testi-2{
+    position: relative;
+    right: -5%;
+}
+.testi .testi-1{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 30px 30px;
+    border-radius: 30px;
+}
+.testi .testi-2{
+    background-color:#FFFFFF;
+    color: #000;
+    padding: 30px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--color-5);
+}
 /* Media Queries */
 @media(max-width:794px){
     .list .items{
@@ -490,6 +544,14 @@ font-size: 1rem;
     .feature .business-para{
         font-size: 1.8rem;
     }
+    .price .para{
+        font-size: 2rem;
+    }
+    .arrow-left img, .arrow-right img{
+        width: 50%;
+        position: relative;
+        top: 20px;
+    }
 }
 @media screen and (max-width:670px){
     .hero-section .left h1{
@@ -515,7 +577,9 @@ font-size: 1rem;
     .multiple-logo{
         padding: 22px 5%;
     }
-
+    .price .para{
+        font-size: 1.6rem;
+    }
 }
 @media screen and (max-width:485px){
     .hero-section .left h1{
@@ -580,7 +644,11 @@ font-size: 1rem;
 @media screen and (max-width:950px){
     .feature-cards{
        flex-direction: column;
-       gap: 10px;
+    }
+}
+@media screen and (max-width:931px){
+    .price .price-details{
+       flex-direction: column;
     }
 }
 @media screen and (min-width:583px) and (max-width:950px){
@@ -611,5 +679,20 @@ font-size: 1rem;
 
     .feature-cards .right div p{
         font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:571px){
+    .price .para{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:467px){
+    .price .para{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:413px){
+    .price .para{
+        font-size: 0.8rem;
     }
 }
