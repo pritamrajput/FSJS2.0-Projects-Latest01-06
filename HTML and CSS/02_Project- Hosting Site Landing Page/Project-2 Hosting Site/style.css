@@ -414,22 +414,33 @@ font-size: 1rem;
 }
 /* testimonials */
 .testimonials{
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     padding-left: 8%;
     padding-right: 8%;
 }
 .testimonials .paragraph{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
+}
+.testimonials .paragraph .paragraph1{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.testimonials .paragraph .paragraph2{
+    font-weight: 600;
 }
 .testi{
     display: flex;
     justify-content: space-between; 
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
     overflow: auto;
     white-space: nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .testi::-webkit-scrollbar{
     height: 5px;
@@ -442,23 +453,66 @@ font-size: 1rem;
     background-color: var(--color-2);
     border-radius: 100vw;
 }
-.testi .testi-2{
-    position: relative;
-    right: -5%;
-}
+
 .testi .testi-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
     background-color: #000000;
     color: #FFFFFF;
     padding: 30px 30px;
     border-radius: 30px;
 }
+.testi .testi-1 div:nth-child(4) img{
+width: 20px;
+}
+.testi .testi-1 div:nth-child(1) img{
+    width: 15px;
+}
 .testi .testi-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
     background-color:#FFFFFF;
     color: #000;
     padding: 30px 30px;
     border-radius: 30px;
     border: 1px solid var(--color-5);
 }
+.testi .testi-2 div:nth-child(4) img{
+    width: 20px;
+    }
+    .testi .testi-2 div:nth-child(1) img{
+        width: 15px;
+    }
+.testi .testi-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color:#000000;;
+    color: #FFFFFF;
+    padding: 30px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--color-5);
+}
+.testi .testi-3 div:nth-child(4) img{
+    width: 20px;
+    }
+    .testi .testi-3 div:nth-child(1) img{
+        width: 15px;
+    }
+
+    /* footer */
+    .footer{
+        padding: 22px 8%;
+    }
+    .footer-1 .footpara{
+      text-align: center;
+    }
+
 /* Media Queries */
 @media(max-width:794px){
     .list .items{
@@ -551,6 +605,12 @@ font-size: 1rem;
         width: 50%;
         position: relative;
         top: 20px;
+    }
+    .testimonials .paragraph .paragraph1{
+        font-size: 1.1rem;
+    }
+    .testimonials .paragraph .paragraph2{
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width:670px){
@@ -656,6 +716,12 @@ font-size: 1rem;
         padding-left: 15%;
         padding-right: 15%;
      }
+     .testimonials .paragraph .paragraph1{
+        font-size: 1rem;
+    }
+    .testimonials .paragraph .paragraph2{
+        font-size: 0.7rem;
+    }
 }
 @media screen and (max-width:501px){
     .feature-cards{
@@ -694,5 +760,72 @@ font-size: 1rem;
 @media screen and (max-width:413px){
     .price .para{
         font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:616px){
+    .testimonials .paragraph .paragraph1{
+        font-size: 0.8rem
+      
+    }
+    .testimonials .paragraph .paragraph2{
+       font-size: 0.5rem; 
+    }
+    .testimonials .paragraph{
+        gap: 20px;
+    }
+}
+@media screen and (max-width:470px){
+    .testimonials .paragraph .paragraph1{
+        font-size: 0.6rem
+      
+    }
+    .testimonials .paragraph .paragraph2{
+       font-size: 0.5rem; 
+    }
+    .testimonials{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+@media screen and (max-width:368px){
+    .testimonials .paragraph .paragraph1{
+        font-size: 0.5rem
+      
+    }
+    .testimonials .paragraph .paragraph2{
+       font-size: 0.5rem; 
+    }
+    .testimonials{
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+    }
+}
+@media screen and (max-width:670px){
+    .testi{
+        
+        gap: 20px;
+    }
+    .testi .testi-1,.testi .testi-2,.testi .testi-3{
+        width: 480px;
+        height: 240px;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:670px) {
+    .testi .testi-1 .head h3,.testi .testi-2 .head h3,.testi .testi-3 .head h3{
+        font-size: 1rem;
+     }
+     .testi .testi-1 .head p,.testi .testi-2 .head p, .testi .testi-3 .head p{
+        font-size: 0.8rem;
+     }
+     .testi .testi-1 .head1 p, .testi .testi-2 .head1 p, .testi .testi-3 .head1 p{
+        font-size: 0.8rem;
+     }
+}
+@media screen and (max-width:670px) {
+    .testi .testi-1,.testi .testi-2,.testi .testi-3{
+        width: 400px;
+        height: 200px;
+        gap: 10px;
     }
 }
