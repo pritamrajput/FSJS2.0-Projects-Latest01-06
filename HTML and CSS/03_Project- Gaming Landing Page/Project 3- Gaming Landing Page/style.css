@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .30s ease;
+}
+:root{
+    --color-0: #f4694c;
+    --color-1: #ffffff;
+    --color-2: #fde1db;
+    --color-3: #000308;
+    --color-4: #000000;
+    --color-5: #908f90;
+}
+
+/* ** section 1 navabar and hero-section ** */
+.section-1{
+    background: url('./Assets/Photos/futuristic-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 24px 8%;
+}
+.logo-list{
+    display: flex;
+    gap: 80px;
+}
+.logo-list .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 120px;
+}
+.logo-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    gap: 40px;
+    list-style: none;
+    color: var(--color-1);
+}
+.logo-list ul li a{
+   color: #ffffff;
+   text-decoration: none;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.section-1 .buttons .secondary-btn{
+    padding: 8px 20px;
+    background-color: var(--color-0);
+    border: 1px solid var(--color-0);
+    color: #ffffff;
+}
+.section-1 .buttons .primary-btn{
+    background-color: transparent;
+    padding: 8px 20px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.buttons .primary-btn:hover{
+    border: 1px solid var(--color-0);
+}
+.buttons .secondary-btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hamburger #bar1{
+   transform: translateY(-4px); 
+}
+.hamburger #bar3{
+    transform: translateY(4px);
+}
+.hamburger .bar{
+    background-color: var(--color-0);
+    width: 25px;
+    height: 2px;
+}
+.icon #bar1{
+    transform: rotate(-45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+.icon #bar3{
+    transform: rotate(45deg);
+}
+
+/* herosection */
+.herosection{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 8%;
+}
+.left .boldpara{
+    font-size: 1.5rem;
+    color: var(--color-1);
+}
+.left .lightpara{
+    color: var(--color-5);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.btn .primary-button{
+    border: 1px solid var(--color-0);
+    background-color: var(--color-0);
+    padding: 2% 5%;
+    color: #ffffff;
+    font-size: 700;
+}
+.btn .secondary-button{
+    border: 1px solid var(--color-1);
+    background-color: transparent;
+    padding: 2% 5%;
+    color: #ffffff;
+    font-size: 600;
+}
+.btn .primary-button:hover{
+    border: 1px solid var(--color-1);
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn .secondary-button:hover{
+    border: 1px solid var(--color-0);
+    background-color: var(--color-0);
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.paragraph{
+    display: flex;
+}
+.paragraph div:nth-child(3){
+    align-self: flex-end;
+}
+.paragraph div p{
+    color: var(--color-1);
+    font-size: 1.4rem;
+}
+
+/* Media Queries */
+@media (max-width:910px){
+    .logo-list{
+        gap: 40px;
+    }
+    .logo-list ul{
+        gap: 25px;
+    }
+    .navbar{
+        padding: 24px 6%;
+     }
+}
+@media (max-width:768px){
+    .logo-list{
+        gap: 30px;
+    }
+    .navbar{
+        padding: 24px 4%;
+     }
+}
+@media (max-width:723px){
+    .logo-list ul{
+        font-size: 0.8rem;
+        gap: 20px;
+    } 
+    .logo img{
+        width: 100px;
+    }
+}
+@media (min-width:650px){
+    .hamburger{
+        display: none;
+    }
+}
+@media (max-width:650px){
+    .list{
+        display: none;
+    }
+    .buttons button{
+        display: none;
+    }
+}
