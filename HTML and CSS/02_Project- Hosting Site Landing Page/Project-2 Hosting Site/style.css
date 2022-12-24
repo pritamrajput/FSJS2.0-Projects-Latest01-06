@@ -623,20 +623,20 @@ width: 20px;
     }
 }
 @media(max-width:670px){
-      /* .items{
+      .items{
        position: absolute;
        background-color: var(--color-0);
        flex-direction: column;
        align-items: center;
        top: 100%;
-       right: 2%;
+       right: -100%;
        color: #FFFFFF;
        width: 270px;
        border-radius: 10px;
        transition: all .50s ease;
-    } */
-    .list{
-        display: none;
+    }
+    .list-ani{
+        right: 2%;
     }
     .list .items a{
         color:#FFFFFF ;

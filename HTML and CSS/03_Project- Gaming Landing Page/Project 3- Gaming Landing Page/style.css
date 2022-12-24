@@ -26,6 +26,8 @@
    justify-content: space-between;
    align-items: center;
    padding: 24px 8%;
+   width: 100%;
+   position: relative;
 }
 .logo-list{
     display: flex;
@@ -42,6 +44,7 @@
 }
 .logo img{
     width: 120px;
+    transform: scale(1);
 }
 .logo-list ul{
     display: flex;
@@ -52,6 +55,9 @@
     gap: 40px;
     list-style: none;
     color: var(--color-1);
+}
+.list .list1 button{
+    display: none;
 }
 .logo-list ul li a{
    color: #ffffff;
@@ -78,12 +84,32 @@
 }
 .buttons .primary-btn:hover{
     border: 1px solid var(--color-0);
+    cursor: pointer;
 }
 .buttons .secondary-btn:hover{
     background-color: transparent;
     cursor: pointer;
 }
-
+#lists1 .primary-btn{
+    background-color: transparent;
+    padding: 8px 20px;
+    color: #ffffff;
+    border: 1px solid var(--color-0) ;
+    cursor: pointer; 
+}
+#lists1 .primary-btn:hover{
+    border: 1px solid var(--color-0);
+}
+#lists1 .secondary-btn{
+    padding: 8px 20px;
+    background-color: var(--color-0);
+    border: 1px solid var(--color-0);
+    color: #ffffff;
+}
+#lists1 .secondary-btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
 .hamburger #bar1{
    transform: translateY(-4px); 
 }
@@ -96,20 +122,24 @@
     height: 2px;
 }
 .icon #bar1{
-    transform: rotate(-45deg);
+    transform: translateY(2px) rotate(-45deg);
 }
 .icon #bar2{
     opacity: 0;
 }
 .icon #bar3{
-    transform: rotate(45deg);
+    transform: translateY(-2px) rotate(45deg);
 }
 
 /* herosection */
 .herosection{
     display: flex;
     justify-content: space-between;
-    padding: 24px 8%;
+    padding: 40px 8%;
+    width: 100%;
+}
+.left{
+    flex: 6;
 }
 .left .boldpara{
     font-size: 1.5rem;
@@ -118,6 +148,7 @@
 .left .lightpara{
     color: var(--color-5);
     font-size: 0.9rem;
+    font-weight: 600;
     margin-top: 40px;
 }
 .btn{
@@ -155,9 +186,29 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex: 4;
 }
 .paragraph{
     display: flex;
+}
+.right .play-btn{
+    position: relative;
+    top: 30%;
+}
+.right .play-btn:hover{
+    cursor: pointer;
+}
+.click img{
+    transform: scale(0.8);
+    transition: all 0.5 ease;
+}
+
+.paragraph .left-arrow{
+    width: 45px;
+    height: 1.5px;
+    background-color: #ffffff;
+    transform: translateY(18px);
+    margin-right: 5px;
 }
 .paragraph div:nth-child(3){
     align-self: flex-end;
@@ -177,6 +228,9 @@
     }
     .navbar{
         padding: 24px 6%;
+     }
+     .herosection{
+        padding: 24px 6% ;
      }
 }
 @media (max-width:768px){
@@ -208,4 +262,86 @@
     .buttons button{
         display: none;
     }
+    
+    .list{
+        position: absolute;
+        display: none;
+        top: 100%;
+        right: 2%;
+        opacity: 0;
+        transition: 0;
+        background:var(--color-3);
+        backdrop-filter: blur(20px);
+        width: 50vw;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .wave{
+        display: block;
+        opacity: 1;
+        transition: all 1s ease;
+        z-index: 5;
+    }
+    .list .list1 button{
+        display: block;
+    }
+    .list .list1{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+@media (max-width:1001px){
+    .herosection .boldpara{
+        font-size: 1.1rem;
+    }
+    .herosection .lightpara{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:963px){
+    .paragraph div p{
+        color: var(--color-1);
+        font-size: 1.1rem;
+    } 
+}
+@media (max-width:793px){
+    .paragraph div p{
+        color: var(--color-1);
+        font-size: 1rem;
+    } 
+}
+@media(max-width:759px){
+    .herosection{
+      flex-direction: column;
+      padding: 24px 4% ;
+    }
+    
+}
+@media(max-width:480px){
+    .herosection .boldpara{
+        font-size: 1rem;
+    }
+    .herosection .lightpara{
+        font-size: 0.8rem;
+    } 
+}
+@media(max-width:443px){
+    .herosection .boldpara{
+        font-size: 0.9rem;
+    }
+    .herosection .lightpara{
+        font-size: 0.7rem;
+        font-weight: 700;
+    } 
+}
+@media(max-width:387px){
+    .herosection .boldpara{
+        font-size: 0.8rem;
+    }
+    .herosection .lightpara{
+        font-size: 0.6rem;
+        font-weight: 700;
+    } 
+}
+
