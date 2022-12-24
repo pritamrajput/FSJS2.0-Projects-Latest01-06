@@ -218,6 +218,128 @@
     font-size: 1.4rem;
 }
 
+/* most popular game section */
+.popular-fight{
+    padding: 22px 8%;
+}
+.games{
+    height: 260px;
+}
+.popular-fight .games .game-1{
+    display: flex;
+    align-items: flex-end;
+    background: url('./Assets/Photos/image\ 2.png');
+    background-repeat: no-repeat;
+    background-size: 380px 100%;
+    background-position: right center;
+
+}
+div.game-1 .review01{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.games .game-1 div button{
+    background-color: #f4694c;
+    color: #ffffff;
+    border: 1px solid #f4694c;
+    padding: 5px 8px;
+}
+.games .game-1 .head h4{
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+.games .game-1 .head{
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+.popular-fight .games .game-2{
+    display: flex;
+    align-items: flex-end;
+    background: url('./Assets/Photos/image\ 4.png');
+    background-repeat: no-repeat;
+    background-size: 400px 100%;
+    background-position: center center;
+}
+div.game-2 .review02{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.games .game-2 div button{
+    background-color: #f4694c;
+    color: #ffffff;
+    border: 1px solid #f4694c;
+    padding: 5px 8px;
+}
+.games .game-2 .head{
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+.popular-fight .games .game-3{
+    display: flex;
+    align-items: flex-end;
+    background: url('./Assets/Photos/image\ 3.png');
+    background-repeat: no-repeat;
+    background-size: 400px 100%;
+    background-position: center center;
+}
+div.game-3 .review03{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.games .game-3 div button{
+    background-color: #f4694c;
+    color: #ffffff;
+    border: 1px solid #f4694c;
+    padding: 5px 8px;
+}
+.games .game-3 .head{
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+.popular-fight .games .game-4{
+    display: flex;
+    align-items: flex-end;
+    background: url('./Assets/Photos/Rectangle\ 56.png');
+    background-repeat: no-repeat;
+    background-size: 400px 100%;
+    background-position: center center;
+}
+div.game-4 .review04{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.games .game-4 div button{
+    background-color: #f4694c;
+    color: #ffffff;
+    border: 1px solid #f4694c;
+    padding: 5px 8px;
+}
+.games .game-4 .head{
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+.popular-fight .games{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
 /* Media Queries */
 @media (max-width:910px){
     .logo-list{
