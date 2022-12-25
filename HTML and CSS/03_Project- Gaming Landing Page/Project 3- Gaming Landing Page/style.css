@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -220,10 +220,19 @@
 
 /* most popular game section */
 .popular-fight{
+    display: flex;
+    flex-direction: column;
     padding: 22px 8%;
 }
 .games{
     height: 260px;
+}
+.popular-fight .para{
+text-align: center;
+font-size: 2.5rem;
+font-weight: bolder;
+padding-top: 44px;
+padding-bottom: 50px;
 }
 .popular-fight .games .game-1{
     display: flex;
@@ -232,7 +241,9 @@
     background-repeat: no-repeat;
     background-size: 380px 100%;
     background-position: right center;
-
+}
+.game-1{
+    position: relative;
 }
 div.game-1 .review01{
     width: 100%;
@@ -241,6 +252,10 @@ div.game-1 .review01{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 .games .game-1 div button{
     background-color: #f4694c;
@@ -257,9 +272,11 @@ div.game-1 .review01{
     font-size: 0.9rem;
   }
 .popular-fight .games .game-2{
+    position: relative;
     display: flex;
     align-items: flex-end;
     background: url('./Assets/Photos/image\ 4.png');
+    backdrop-filter: blur(10px);
     background-repeat: no-repeat;
     background-size: 400px 100%;
     background-position: center center;
@@ -271,6 +288,10 @@ div.game-2 .review02{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 .games .game-2 div button{
     background-color: #f4694c;
@@ -297,6 +318,10 @@ div.game-3 .review03{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 .games .game-3 div button{
     background-color: #f4694c;
@@ -323,6 +348,10 @@ div.game-4 .review04{
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 .games .game-4 div button{
     background-color: #f4694c;
@@ -340,7 +369,63 @@ div.game-4 .review04{
     gap: 30px;
 }
 
-/* Media Queries */
+/* ***---war game---*** */
+.war-game{
+    display: flex;
+    gap: 50px;
+    background-color: var(--color-1);
+    padding: 22px 8%; 
+    margin-top: 10%;
+}
+.left1{
+    background-image: url(./Assets/Photos/Rectangle\ 57.png);
+    background-size: 700px 100%;
+    background-position: center center;
+    flex: 4.5;
+}
+.right1{
+flex: 5.5;
+}
+.right1 .warpara{
+    color: #0a0a0a;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.right1 .warheader{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    line-height: 2.8rem;
+    font-weight: 600;
+}
+.war-btn{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.war-btn button:nth-child(1){
+    background-color: var(--color-0);
+    color: #ffffff;
+    border: 1px solid var(--color-0);
+    padding: 10px 20px;
+}
+.war-btn button:nth-child(1):hover{
+    background-color: transparent;
+    color: var(--color-0);
+}
+.war-btn button:nth-child(2){
+    background-color: transparent;
+    color: var(--color-0);
+    border: 1px solid var(--color-0);
+    padding: 10px 20px;
+}
+.war-btn button:nth-child(2):hover{
+    background-color: var(--color-0);
+    color:var(--color-1);
+}
+
+/* ****---Media Queries---***** */
 @media (max-width:910px){
     .logo-list{
         gap: 40px;
@@ -389,12 +474,12 @@ div.game-4 .review04{
         position: absolute;
         display: none;
         top: 100%;
-        right: 2%;
+        right: 0;
         opacity: 0;
         transition: 0;
-        background:var(--color-3);
-        backdrop-filter: blur(20px);
-        width: 50vw;
+        background:transparent;
+        backdrop-filter: blur(5px);
+        width: 100vw;
         border-radius: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -465,5 +550,261 @@ div.game-4 .review04{
         font-size: 0.6rem;
         font-weight: 700;
     } 
+}
+@media (max-width:1227px){
+    .popular-fight{
+        padding: 22px 6%;
+    }
+   
+}
+@media (max-width:1227px){
+    .war-game{
+        padding: 22px 6%; 
+    }
+}
+@media (max-width:1133px){
+    .popular-fight{
+        padding: 22px 4%;
+    }
+    .war-game{
+        padding: 22px 4%; 
+    }
+    .popular-fight .games{
+        gap: 20px;
+    }
+}
+@media (max-width:1050px){
+    .popular-fight{
+        padding: 22px 2%;
+    
+    }
+    .war-game{
+        padding: 22px 2%; 
+    }
+}
+@media (max-width:995px){
+    .games .game-4 .head{
+        color: #ffffff;
+        font-size: 0.8rem;
+      }
+      .games .game-3 .head{
+        color: #ffffff;
+        font-size: 0.8rem;
+      }
+      .games .game-2 .head{
+        color: #ffffff;
+        font-size: 0.8rem;
+      }
+      .games .game-1 .head h4{
+        color: #ffffff;
+        font-size: 0.7rem;
+      }
+      .games .game-1 .head p{
+        color: #ffffff;
+        font-size: 0.7rem;
+      }
+}
+@media (max-width:967px){
+    .popular-fight .games{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+    }
+    .popular-fight .games .game-4{
+        background-size: 100% 100%;
+    }
+    .popular-fight .games .game-3{
+        background-size: 100% 100%;
+    }
+    .popular-fight .games .game-2{
+        background-size: 100% 100%;
+    }
+    .popular-fight .games .game-1{
+        background-size: 100% 100%;
+    }
+    .popular-fight{
+        padding: 22px 6%;
+        
+    }
+    .games{
+        height: 500px;
+    }
+    .war-game{
+        flex-direction: column;
+        gap: 30px;
+        padding: 22px 6%; 
+        height: 800px;
+    }
+    .left1{
+        flex: 6;
+    }
+    .right1{
+        flex: 4;
+    }
+}
+@media (max-width:748px){
+    .popular-fight .games .game-4{
+        background-size: 400px 100%;
+    }
+    .popular-fight .games .game-3{
+        background-size: 400px  100%;
+    }
+    .popular-fight .games .game-2{
+        background-size: 400px  100%;
+    }
+    .popular-fight .games .game-1{
+        background-size: 400px 100%;
+    }
+    .popular-fight{
+        padding: 22px 4%;
+        
+    }
+    .popular-fight .para{
+        font-size: 2rem;
+        }
+}
+@media (max-width:621px){
+    .popular-fight .games .game-4{
+        background-size: 300px 100%;
+    }
+    .popular-fight .games .game-3{
+        background-size: 300px  100%;
+    }
+    .popular-fight .games .game-2{
+        background-size: 300px  100%;
+    }
+    .popular-fight .games .game-1{
+        background-size: 300px 100%;
+    }
+    .popular-fight{
+        padding: 22px 2%;
+        
+    }
+    .popular-fight .games{
+        gap: 20px;
+    }
+}
+@media (max-width:471px){
+    .popular-fight .games{
+        gap: 10px;
+    }
+    .games .game-4 .head h4{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-4 .head p{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-3 .head h4{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-3 .head p{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-2 .head h4{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-2 .head p{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-1 .head h4{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-1 .head p{
+        color: #ffffff;
+        font-size: 0.5rem;
+      }
+      .games .game-4 div button{
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+    div.game-4 .review04{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .games .game-3 div button{
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+    div.game-3 .review03{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .games .game-2 div button{
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+    div.game-2 .review02{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .games .game-1 div button{
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+    div.game-1 .review01{
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media (max-width:507px){
+    .popular-fight .para{
+        font-size: 1.6rem;
+        }
+}
+@media (max-width:407px){
+    .popular-fight .para{
+        font-size: 1.3rem;
+        }
+}
+@media (max-width:547px){
+    .war-game{
+        padding: 22px 2%; 
+    }
+}
+@media (max-width:493px){
+    .right1 .warheader{
+        font-size: 1rem;
+    }
+    .right1 .warpara{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:431px){
+    .right1 .warheader{
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+    }
+    .right1 .warpara{
+        font-size: 0.6rem;
+    }
+    .left1{
+        flex: 1;
+    }
+    .right1{
+        flex: 1;
+    }
+}
+@media (max-width:367px){
+    
+    .right1 .warpara{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    
 }
 
