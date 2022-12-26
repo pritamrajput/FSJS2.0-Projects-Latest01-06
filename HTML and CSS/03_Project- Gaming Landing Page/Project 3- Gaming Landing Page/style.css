@@ -425,6 +425,144 @@ flex: 5.5;
     color:var(--color-1);
 }
 
+
+/* ****----Recommended games----**** */
+.reco-games{
+    padding: 80px 8%;
+}
+.reco-games .next-para{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.reco-games .next-para .lr-arrow{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 20px;
+}
+.lr-arrow div:nth-child(1){
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.lr-arrow div:nth-child(2){
+    background-color: var(--color-0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.set1-game{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.set1-game .s1-game-01{
+    background-image: url(./Assets/Photos/Rectangle\ 75.png);
+    background-size: 100% 100%;
+}
+.set1-game .s1-game-01:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.set1-game .s1-game-02{
+    background-image: url(./Assets/Photos/Rectangle\ 76.png);
+    background-size: 100% 100%;
+}
+.set1-game .s1-game-02:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.s1-game1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+.s1-game2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+.s1-game-01{
+   flex: 4;
+}
+.s1-game-02{
+    flex: 4;
+ }
+
+ .set2-game{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+ }
+ .set2-game .s2-game-01{
+    background-image: url(./Assets/Photos/Rectangle\ 77.png);
+    background-size: 100% 100%;
+}
+.set2-game .s2-game-01:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.set2-game .s2-game-02{
+    background-image: url(./Assets/Photos/Rectangle\ 78.png);
+    background-size: 100% 100%;
+}
+.set2-game .s2-game-02:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+.s2-game1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+.s2-game2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+}
+.s2-game-01{
+    flex: 4;
+}
+.s2-game-02{
+    flex: 4;
+}
+.para-and-btn{
+    flex: 6;
+}
+.para-and-btn p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.para-and-btn div:nth-child(1){
+    margin-top: 10px;
+}
+.para-and-btn div:nth-child(1) p{
+   color: var(--color-0);
+}
+.para-and-btn div:nth-child(2){
+    padding: 15px 0;
+}
+.para-and-btn div:nth-child(3) button{
+    background-color: var(--color-0);
+    border: 1px solid var(--color-0);
+    color: #ffffff;
+    padding: 8px 20px;
+}
+.para-and-btn div:nth-child(3){
+    margin-bottom: 10px;
+}
+
 /* ****---Media Queries---***** */
 @media (max-width:910px){
     .logo-list{
@@ -541,6 +679,9 @@ flex: 5.5;
         font-size: 0.7rem;
         font-weight: 700;
     } 
+    .reco-games .reco-para h2{
+        font-size: 1.15rem;
+    }
 }
 @media(max-width:387px){
     .herosection .boldpara{
@@ -554,6 +695,9 @@ flex: 5.5;
 @media (max-width:1227px){
     .popular-fight{
         padding: 22px 6%;
+    }
+    .reco-games{
+        padding: 80px 6%;
     }
    
 }
@@ -572,6 +716,9 @@ flex: 5.5;
     .popular-fight .games{
         gap: 20px;
     }
+    .reco-games{
+        padding: 80px 4%;
+    }
 }
 @media (max-width:1050px){
     .popular-fight{
@@ -580,6 +727,9 @@ flex: 5.5;
     }
     .war-game{
         padding: 22px 2%; 
+    }
+    .reco-games{
+        padding: 80px 2%;
     }
 }
 @media (max-width:995px){
@@ -640,6 +790,20 @@ flex: 5.5;
     }
     .right1{
         flex: 4;
+    }
+    .set1-game{
+       flex-direction: column;
+       gap: 40px;
+    }
+    .set2-game{
+        flex-direction: column;
+        gap: 40px;
+     }
+     .para-and-btn p{
+        font-size: 0.8rem;
+    }
+    .reco-games{
+        padding: 40px 6%;
     }
 }
 @media (max-width:748px){
@@ -760,6 +924,24 @@ flex: 5.5;
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    .para-and-btn div:nth-child(1) h2{
+       font-size: 1rem;
+    }
+    .para-and-btn div:nth-child(2) p{
+        font-size: 0.6rem;
+     }
+     .s1-game1{
+        gap: 10px;
+    }
+    .s1-game2{
+        gap: 10px;
+    }
+     .s2-game1{
+        gap: 10px;
+    }
+    .s2-game2{
+        gap: 10px;
+    }
 }
 @media (max-width:507px){
     .popular-fight .para{
@@ -807,4 +989,21 @@ flex: 5.5;
     }
     
 }
-
+@media (max-width:379px){
+    
+    .para-and-btn div:nth-child(2) p{
+        font-size: 0.55rem;
+     }
+    
+}
+@media (max-width:547px){
+    .reco-games{
+        padding: 80px 2%;
+    }
+}
+@media (max-width:1010px){
+    .para-and-btn p{
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+}
