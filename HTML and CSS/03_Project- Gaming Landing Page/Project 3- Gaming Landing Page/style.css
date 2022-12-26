@@ -878,6 +878,11 @@ flex: 5.5;
         top: 22%;
         right: 8%;
     }
+    footer{
+        background-color: var(--color-4);
+        padding: 22px 6%;
+        gap: 30px;
+     }
 }
 @media (max-width:1227px){
     .war-game{
@@ -900,6 +905,21 @@ flex: 5.5;
     .mst-played-game{
         padding: 10px 4%;
     }
+    footer{
+        padding: 22px 4%;
+        gap: 20px;
+     }
+     .other-stuff{
+        gap: 1%;
+    }
+}
+@media (max-width:1077px){
+    footer{
+        padding: 22px 2%;
+     }
+     .social-media .social-para p{
+        font-size: 0.75rem;
+     }
 }
 @media (max-width:1050px){
     .popular-fight{
@@ -1308,5 +1328,27 @@ flex: 5.5;
 @media (min-width:968px){
     .gamer-black-back{
         padding-top: 10%;
+    }
+}
+@media (max-width:876px){
+    footer{
+        background-color: var(--color-4);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        padding: 22px 6%;
+     } 
+     .social-media{
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+     }
+     .social-media .social-para{
+        text-align: center;
+     }
+     .other-stuff{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2%;
     }
 }
