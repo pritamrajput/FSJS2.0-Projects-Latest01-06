@@ -563,6 +563,87 @@ flex: 5.5;
     margin-bottom: 10px;
 }
 
+/* ****----Most played games of the year----**** */
+.mst-played-game{
+    position: relative;
+    background-color: var(--color-4);
+    padding: 10px 8%;
+}
+.mst-played-game div:nth-child(1) h2{
+    color: var(--color-1);
+    text-align: center;
+}
+.mst-played-game .played-games .data-para p{
+    color: var(--color-5);
+    font-size: 0.9rem;
+}
+
+.played-games .games-played{
+    display: flex;
+    height: 600px;
+    gap: 40px;
+}
+.played-games .games-played .played-game1{
+   background-image: url(./Assets/Photos/Rectangle\ 17.png);
+   background-size: 100% 100%;
+   background-position: center center;
+   flex: 1;
+   height: 350px;
+   z-index: 3;
+}
+.played-games .games-played .played-game2{
+    background-image: url(./Assets/Photos/Rectangle\ 18.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    flex: 1;
+    height: 350px;
+    align-self: flex-end;
+    z-index: 3;
+ }
+ .played-games .games-played .played-game3{
+    background-image: url(./Assets/Photos/Rectangle\ 90.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    flex: 1;
+    height: 240px;
+    align-self: flex-end;
+ }
+ .played-games .game-of-world{
+    width: 66.5%;
+ }
+ .played-games .game-of-world img{
+    width: 100%;
+ }
+ .played-games .data-para{
+    position: absolute;
+    top: 22%;
+    right: 12%;
+}
+ .played-games .game-of-world {
+    position: absolute;
+    right: 0;
+    top: 39%;
+    z-index: 0;
+ }
+
+ /* ****----GAMER----**** */
+ .gamer-black-back{
+    background-color: var(--color-4);
+    padding: 22px 0;
+ }
+ .gamer-back{
+    background-image: url(./Assets/Photos/Rectangle\ 606.png);
+    background-size: 100% 100%;
+ }
+ .gamer-header{
+    color: var(--color-1);
+    text-align: center;
+ }
+ .gamer-para{
+    text-align: center;
+    color: var(--color-5);
+ }
+
 /* ****---Media Queries---***** */
 @media (max-width:910px){
     .logo-list{
@@ -699,7 +780,14 @@ flex: 5.5;
     .reco-games{
         padding: 80px 6%;
     }
-   
+    .mst-played-game{
+        padding: 10px 6%;
+    }
+    .played-games .data-para{
+        position: absolute;
+        top: 22%;
+        right: 8%;
+    }
 }
 @media (max-width:1227px){
     .war-game{
@@ -719,6 +807,9 @@ flex: 5.5;
     .reco-games{
         padding: 80px 4%;
     }
+    .mst-played-game{
+        padding: 10px 4%;
+    }
 }
 @media (max-width:1050px){
     .popular-fight{
@@ -730,6 +821,12 @@ flex: 5.5;
     }
     .reco-games{
         padding: 80px 2%;
+    }
+    .mst-played-game{
+        padding: 10px 2%;
+    }
+    .played-games .data-para{
+        right: 5%;
     }
 }
 @media (max-width:995px){
@@ -805,6 +902,34 @@ flex: 5.5;
     .reco-games{
         padding: 40px 6%;
     }
+    .played-games .games-played{
+        display: flex;
+    }
+    .played-games .games-played .played-game1{
+        align-self: center;
+        height: 300px;
+    }
+    .played-games .games-played .played-game3{
+        height: 300px;
+        align-self: center;
+    }
+    .played-games .games-played .played-game2{
+        align-self: center;
+        height: 300px;
+    }
+     .played-games .data-para{
+        position:relative ;
+        text-align: center;
+        left: 0;
+        margin-top: 30px;
+    }
+    .played-games .game-of-world {
+        top: 30%;
+     }
+     .played-games .games-played{
+        height: 480px;
+        gap: 20px;
+     }
 }
 @media (max-width:748px){
     .popular-fight .games .game-4{
@@ -1005,5 +1130,88 @@ flex: 5.5;
     .para-and-btn p{
         font-size: 0.7rem;
         font-weight: 600;
+    }
+}
+@media (max-width:661px){
+    .played-games .games-played .played-game1{
+        align-self: center;
+        height: 250px;
+    }
+    .played-games .games-played .played-game3{
+        height: 250px;
+        align-self: center;
+    }
+    .played-games .games-played .played-game2{
+        align-self: center;
+        height: 250px;
+    }
+}
+@media (max-width:598px){
+    .played-games .games-played .played-game1{
+        align-self: center;
+        height: 200px;
+    }
+    .played-games .games-played .played-game3{
+        height: 200px;
+        align-self: center;
+    }
+    .played-games .games-played .played-game2{
+        align-self: center;
+        height: 200px;
+    }
+    .played-games .games-played{
+        gap: 10px;
+    }
+}
+@media (max-width:655px){
+    .mst-played-game .played-games .data-para p{
+        font-size: 0.8rem;
+    }
+    .played-games .games-played{
+        height: 400px;
+    }
+    .played-games .game-of-world {
+        position: absolute;
+        right: 0;
+        top: 33%;
+        z-index: 0;
+     }
+}
+@media (max-width:579px){
+    .mst-played-game .played-games .data-para p{
+        font-size: 0.7rem;
+    }
+    .played-games .game-of-world {
+        top: 33%;
+     }
+}
+@media (max-width:507px){
+    .played-games .game-of-world {
+        top: 36%;
+     }
+}
+@media (max-width:450px){
+    .played-games .games-played .played-game1{
+        height: 180px;
+    }
+    .played-games .games-played .played-game3{
+        height: 180px;
+    }
+    .played-games .games-played .played-game2{
+        height: 180px;
+    }
+}
+@media (max-width:371px){
+    .played-games .game-of-world {
+        top: 40%;
+     }
+    .played-games .games-played .played-game1{
+        height: 160px;
+    }
+    .played-games .games-played .played-game3{
+        height: 160px;
+    }
+    .played-games .games-played .played-game2{
+        height: 160px;
     }
 }
