@@ -635,6 +635,22 @@ flex: 5.5;
     background-image: url(./Assets/Photos/Rectangle\ 606.png);
     background-size: 100% 100%;
  }
+ .gamer-back .main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:7%;
+    padding-bottom: 7%;
+    backdrop-filter: brightness(40%);;
+ }
+ .gamer-back .main-div button{
+    background-color: var(--color-0);
+    border: #f4694c;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+ }
  .gamer-header{
     color: var(--color-1);
     text-align: center;
@@ -644,6 +660,71 @@ flex: 5.5;
     color: var(--color-5);
  }
 
+
+ /* *****----FOOTER----***** */
+ footer{
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 8%;
+    gap: 40px;
+ }
+.social-para{
+    color: #ffffff;
+}
+.social-icon{
+    display: flex;
+}
+.other-stuff{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #ffffff;
+    gap: 2%;
+    flex: 8;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 2;
+}
+.social-media .social-logo img{
+    width: 120px;
+}
+.social-media .social-para p{
+    font-size: 0.9rem;
+    color: var(--color-5);
+}
+.social-icon{
+    display: flex;
+    gap: 10px;
+}
+.social-icon .facebook img{
+  width: 35px;
+}
+.social-icon .instagram img{
+    width: 35px;
+  }
+  .social-icon .twitter img{
+    width: 35px;
+  }
+.other-stuff div li{
+    list-style: none;
+}
+.other-stuff div li a{
+    text-decoration: none;
+    color: var(--color-5);
+    font-size: 0.93rem;
+}
+.other-stuff div li a:hover{
+    color: var(--color-0);
+}
+.other-stuff div ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* ****---Media Queries---***** */
 @media (max-width:910px){
     .logo-list{
@@ -751,6 +832,12 @@ flex: 5.5;
     .herosection .lightpara{
         font-size: 0.8rem;
     } 
+    .gamer-para p{
+       font-size: 0.9rem;
+     }
+     .gamer-header h1{
+        font-size: 1.4rem;
+     }
 }
 @media(max-width:443px){
     .herosection .boldpara{
@@ -763,6 +850,9 @@ flex: 5.5;
     .reco-games .reco-para h2{
         font-size: 1.15rem;
     }
+    .gamer-para p{
+        font-size: 0.8rem;
+      }
 }
 @media(max-width:387px){
     .herosection .boldpara{
@@ -1213,5 +1303,10 @@ flex: 5.5;
     }
     .played-games .games-played .played-game2{
         height: 160px;
+    }
+}
+@media (min-width:968px){
+    .gamer-black-back{
+        padding-top: 10%;
     }
 }
