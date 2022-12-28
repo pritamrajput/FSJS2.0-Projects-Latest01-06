@@ -152,6 +152,14 @@ section{
     padding: 30px 5%;
     height: 400px;
 }
+.best__estate__sect2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 5%;
+    height: 400px;
+}
 .sect1{
     display: flex;
     justify-content: center;
@@ -184,10 +192,10 @@ section{
     transform-style: preserve-3d;
     transition: all 1s ease;
     cursor: pointer;
-    transform: translateY(10px);
+    transform: translateY(20px);
 }
 .sect2:hover{
-    transform: rotateY(0.5turn);
+    transform:translateY(20px) rotateY(0.5turn);
 }
 .sect3{
     display: flex;
@@ -203,10 +211,64 @@ section{
     transform-style: preserve-3d;
     transition: all 1s ease;
     cursor: pointer;
-    transform: translateY(20px);
+    transform: translateY(40px);
 }
 .sect3:hover{
-    transform: rotateY(0.5turn);
+    transform:translateY(40px) rotateY(0.5turn);
+}
+
+.sect21{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    background-image: url(../Photos/cardImage4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    cursor: pointer;
+    transform: translateY(40px);
+}
+.sect21:hover{
+    transform: translateY(40px) rotateY(0.5turn);
+}
+.sect22{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    background-image: url(../Photos/cardImage5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+.sect22:hover{
+    transform: translateY(20px) rotateY(0.5turn);
+}
+.sect23{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    background-image: url(../Photos/cardImage6.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.sect23:hover{
+    transform:rotateY(0.5turn);
 }
 .price__tag{
     background-color: var(--color-2);
@@ -315,12 +377,12 @@ section{
     }
 }
 @media(max-width:1114px){
-    .best_estate_sect1{
+    .best_estate_sect1,.best__estate__sect2{
         padding: 30px 3%;
     }
 }
 @media(max-width:1045px){
-    .best_estate_sect1{
+    .best_estate_sect1, .best__estate__sect2{
         padding: 30px 0;
     }
 }
@@ -333,18 +395,22 @@ section{
     .best_estate_sect1{
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
+        padding: 30px 5%;
+        height: 900px;
+    }
+    .best__estate__sect2{
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
         padding: 30px 5%;
         height: 900px;
     }
     .sect1,.sect2,.sect3{
         width: 70%;
     }
-    .sect2{
-        transform: translateY(0);
-    }
-    .sect3{
-        transform: translateY(0);
+    .sect21,.sect22,.sect23{
+        width: 70%;
     }
     .price__tag__back div:nth-child(2) button{
         padding: 10px 20px;
@@ -363,6 +429,9 @@ section{
     .price__tag__back{
         width: 90%;
     }
+    .section__h1{
+        font-size: 1.5rem;
+    }
 }
 @media(max-width:503px){
     .sect1,.sect2,.sect3{
@@ -377,5 +446,22 @@ section{
 @media(max-width:417px){
     .sect1,.sect2,.sect3{
         width: 85%;
+    }
+    .section__p{
+        margin-top: 30px;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .section__h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .section__btn{
+        display: flex;
+        justify-content: center;
+
+    }
+    .best_estate_para{
+        font-size: 1.4rem;
     }
 }
