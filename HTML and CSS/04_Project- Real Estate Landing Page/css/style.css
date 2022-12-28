@@ -405,7 +405,7 @@ section{
     .best__estate__sect2{
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        gap: 80px;
         padding: 30px 5%;
         height: 900px;
     }
@@ -448,12 +448,15 @@ section{
     }
 }
 @media(max-width:469px){
-    .best_estate_sect1{
+    .best_estate_sect1,.best__estate__sect2{
         padding: 30px 0;
     }
 }
 @media(max-width:417px){
     .sect1,.sect2,.sect3{
+        width: 85%;
+    }
+    .sect21,.sect22,.sect23{
         width: 85%;
     }
     .section__p{
