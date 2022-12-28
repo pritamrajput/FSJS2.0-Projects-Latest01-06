@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+:root{
+    --color-0: #6d787d;
+    --color-1: #6663e9;
+    --color-2: #f6f8fa;
+    --color-3: #ffffff;
+}
+.hero__container{
+    background-image: url(../Photos/mainBackground.png);
+    background-size: 100% 100%;
+}
+.main__div{
+ padding: 20px 4%;
+ backdrop-filter: brightness(50%);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #382e2e;
+    padding: 20px 5%;
+}
+nav .nav__list ul{
+    display: flex;
+    column-gap: 50px;
+    list-style: none;
+}
+nav .nav__list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+nav .nav__list ul li:hover a{
+    color: var(--color-1);
+
+}
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo img{
+    width: 130px;
+}
+.header__line{
+    height: 1.5px;
+    background-color: var(--color-0);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    color: #f6f8fa;
+    padding: 20px 5%;
+    padding-top: 80px;
+}
+.section__h1{
+    font-size: 2rem;
+}
+.section__p{
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+.section__btn{
+    /* background-color: #6663e9; */
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.section__btn button{
+    border: 1px solid #6663e9;
+    background-color: #6663e9;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius:100vw ;
+}
+.section__btn:hover button{
+   background-color: var(--color-3);
+   color: #6663e9;
+   cursor: pointer;
+   border: 1px solid #ffffff;
+}
+.section__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.section__footer__logo{
+    display:flex ;
+}
+.section__footer__logo img{
+    width: 120px;
+}
+
+/*  Best estate section */
+.sect1{
+    background-image: url(../Photos/cardImage1.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
