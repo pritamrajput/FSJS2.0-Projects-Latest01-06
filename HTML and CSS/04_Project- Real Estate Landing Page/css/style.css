@@ -225,6 +225,7 @@ section{
     background-image: url(../Photos/cardImage4.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 20px;
     position: relative;
     transform-style: preserve-3d;
@@ -243,6 +244,7 @@ section{
     background-image: url(../Photos/cardImage5.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 20px;
     position: relative;
     transform-style: preserve-3d;
@@ -261,6 +263,7 @@ section{
     background-image: url(../Photos/cardImage6.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 20px;
     position: relative;
     transform-style: preserve-3d;
@@ -421,6 +424,9 @@ section{
     .sect1,.sect2,.sect3{
         background-size: 400px 100%;
     }
+    .sect21,.sect22,.sect23{
+        background-size: 400px 100%;
+    }
 }
 @media(max-width:531px){
     .price__tag{
@@ -435,6 +441,9 @@ section{
 }
 @media(max-width:503px){
     .sect1,.sect2,.sect3{
+        background-size: 350px 100%;
+    }
+    .sect21,.sect22,.sect23{
         background-size: 350px 100%;
     }
 }
