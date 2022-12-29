@@ -417,7 +417,7 @@ section{
 .modern__trendy__fearurebg2 img{
     width: 443px;
     height: 380px;
-    border-radius:20px;
+    border-radius:40px;
 }
 .modern__trendy__fearurebg2{
     position: absolute;
@@ -443,6 +443,57 @@ section{
     border-radius: 100vw;
     padding: 10px 15px;
 }
+
+/* ****----unique houses----**** */
+.unique__houses{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f6f8fa;
+    padding-top: 60px
+}
+.unique__houses__right{
+    position: relative;
+}
+.unique__houses__fearurebg1 img{
+    width: 591px;
+    height: 480px;
+  }
+  .unique__houses__fearurebg1{
+      height: 500px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .unique__houses__fearurebg2 img{
+        width: 443px;
+        height: 380px;
+        border-radius:40px;
+    }
+    .unique__houses__fearurebg2{
+        position: absolute;
+        top:5px;
+        left: 8%;
+        width:490px
+    }
+    .unique__houses__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-left: 12%;
+        padding-top: 5%;
+    }
+    .unique__houses__header{
+        font-size: 1.6rem;
+    }
+    .unique__houses__btn button{
+        background-color: #6663e9;
+        border: 1px solid #6663e9;
+        color: #ffffff;
+        border-radius: 100vw;
+        padding: 10px 15px;
+    }
 
 /* ****----Media Queries----**** */
 @media (min-width:939px){
@@ -496,6 +547,9 @@ section{
     .modern__trendy__right{
         padding-right: 6%;
     }
+    .unique__houses__left{
+        padding-left: 6%;
+    }
 }
 @media(max-width:1131px){
      .modern__trendy__fearurebg1 img{
@@ -505,7 +559,6 @@ section{
       .modern__trendy__fearurebg2 img{
         width: 365px;
         height: 320px;
-        border-radius:20px;
     }
     .modern__trendy__fearurebg2{
         top:8%;
@@ -515,6 +568,23 @@ section{
     .modern__trendy__right{
         padding-right: 2%;
     }
+    .unique__houses__fearurebg1 img{
+        width: 500px;
+        height: 400px;
+      }
+    .unique__houses__fearurebg2 img{
+        width: 365px;
+        height: 320px;
+    }
+    .unique__houses__fearurebg2{
+        top:8%;
+       right: 9%;
+       width: 365px;
+    }
+    .unique__houses__left{
+        padding-left: 2%;
+    }
+    
 }
 @media(max-width:1114px){
     .best_estate_sect1,.best__estate__sect2{
@@ -587,6 +657,25 @@ section{
         padding-top: 2%;
         text-align: center;
     }
+    .unique__houses{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .unique__houses__right{
+        align-self: flex-end;
+     }
+     .unique__houses__left{
+        padding-top: 2%;
+        text-align: center;
+    }
+    .unique__houses__fearurebg2{
+        top:4.5%;
+       right: 9%;
+       width: 365px;
+    }
+    .unique__houses__fearurebg1{
+        height: 450px;
+      }
 }
 
 @media(max-width:630px){
@@ -631,6 +720,16 @@ section{
     .modern__trendy__right{
         align-items: center;
     }
+    .unique__houses__header h2{
+        font-size: 1.5rem;
+     }
+     .unique__houses__para p{
+         font-size: 0.7rem ;
+         font-weight: 600;
+     }
+     .unique__houses__left{
+         align-items: center;
+     }
 }
 @media(max-width:469px){
     .best_estate_sect1,.best__estate__sect2{
@@ -656,6 +755,24 @@ section{
         top:0;
        right: 10%;
        width: 240px;
+    }
+    .unique__houses__fearurebg1{
+        width: 340px;
+        height: 250px;
+      }
+    .unique__houses__fearurebg1 img{
+        width: 340px;
+        height: 250px;
+      }
+      .unique__houses__fearurebg2 img{
+        width: 255px;
+        height: 200px;
+        border-radius:20px;
+    }
+    .unique__houses__fearurebg2{
+        top:0;
+       left: 8%;
+       width: 255px;
     }
 }
 @media(max-width:417px){
