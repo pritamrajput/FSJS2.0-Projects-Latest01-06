@@ -621,6 +621,16 @@ section{
     .sect31,.sect32,.sect33{
         background-size: 350px 100%;
     }
+    .trendy__right__header h2{
+       font-size: 1.5rem;
+    }
+    .trendy__right__para p{
+        font-size: 0.7rem ;
+        font-weight: 600;
+    }
+    .modern__trendy__right{
+        align-items: center;
+    }
 }
 @media(max-width:469px){
     .best_estate_sect1,.best__estate__sect2{
@@ -628,6 +638,24 @@ section{
     }
     .best__estate__sect3{
         padding: 30px 0;
+    }
+    .modern__trendy__fearurebg1{
+        width: 340px;
+        height: 250px;
+      }
+    .modern__trendy__fearurebg1 img{
+        width: 340px;
+        height: 250px;
+      }
+      .modern__trendy__fearurebg2 img{
+        width: 240px;
+        height: 200px;
+        border-radius:20px;
+    }
+    .modern__trendy__fearurebg2{
+        top:0;
+       right: 10%;
+       width: 240px;
     }
 }
 @media(max-width:417px){
