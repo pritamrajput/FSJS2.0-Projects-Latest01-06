@@ -499,6 +499,7 @@ section{
     .newsletter__background{
         background-color: var(--color-2);
         padding: 22px 5%;
+        padding-top: 10%;
     }
     .newsletter__section{
         background-color: var(--color-1);
@@ -556,6 +557,65 @@ section{
         width: 15px;
     }
 
+    /* ****----footer----**** */
+    footer{
+        display: grid;
+        background-color: #f6f8fa;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 40px 10%;
+    }
+    .footer__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__list3, .footer__list2, .footer__list1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__list3 ul, .footer__list2 ul, .footer__list1 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+   .footer__list3 li a, .footer__list2 li a, .footer__list1 li a{
+      text-decoration: none;
+      color: #000000;
+   }
+   .footer__list3 li a:hover, .footer__list2 li a:hover, .footer__list1 li a:hover{
+    color: var(--color-1);
+ }
+   .footer__list3 h4 a, .footer__list2 h4 a, .footer__list1 h4 a{
+    text-decoration: none;
+    color: #000000;
+ }
+   .footer__list3 li, .footer__list2 li, .footer__list1 li{
+   list-style: none;
+ }
+ .footer__logo__social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .footer__logo img{
+    width: 150px;
+ }
+ .footer__social{
+    display: flex;
+    gap: 20px;
+ }
+ .footer__social img{
+  width: 45px;
+ }
+
+ /* end */
+ .end{
+    text-align: center;
+    background-color: #6663e9;
+    color: #ffffff;
+    padding: 30px 8%;
+ }
 
 /* ****----Media Queries----**** */
 @media (min-width:939px){
@@ -864,4 +924,51 @@ section{
     .best_estate_para{
         font-size: 1.4rem;
     }
+}
+@media (max-width:668px){
+    .newsletter__section__header h1{
+        font-size: 1.2rem;
+    }
+    .newsletter__section__para p{
+        font-size: 0.6rem;
+    }
+    .newsletter__section__form{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:408px){
+    .newsletter__section__header h1{
+        font-size: 1rem;
+    }
+    .newsletter__section__para p{
+        font-size: 0.55rem;
+    }
+    .newsletter__section__form{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:696px){
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    } 
+    .footer__social{
+       justify-content: center;
+       text-align: center;
+     } 
+     .footer__logo{
+        display: flex;
+        justify-content: center;
+     }
+     .footer__para p{
+        text-align: center;
+     }
+     .footer__list3 ul, .footer__list2 ul, .footer__list1 ul{
+        text-align: center;
+    }
+    .footer__list3 h4, .footer__list2 h4, .footer__list1 h4{
+       text-align: center;
+     }
 }
