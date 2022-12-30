@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+:root{
+    --color-0: #0f0f10;
+    --color-1: #f2f2f3;
+    --color-3: #ffffff;
+    --color-4: #000000;
+}
+
+/* ****----navbar section----**** */
+nav{
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.navbar__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+.navbar__list ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.navbar__list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500; 
+}
+.navbar__list ul li{
+ padding: 6px 13px; 
+ border-radius: 5px;
+}
+.navbar__list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500; 
+}
+.navbar__list ul li:hover{
+ background-color: #ffffff;
+ cursor: pointer;
+}
+.navbar__list ul li:hover a{
+   color: #000000;
+}
+.navbar__list button{
+    background-color: var(--color-0);
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: 1px solid var(--color-0);
+}
+.navbar__list button:hover{
+    cursor: pointer;
+}
+
+/* ****----hero-section----**** */
+.hero__section{
+    background-color: #000000;
+    padding: 20px 10%;
+}
+.hero__header h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 2.7rem;
+}
+.hero__section__para__bag{
+    color: #ffffff;
+}
+.hero__section__onear{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15%;
+}
+.hero__beats img{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__header{
+   position: relative;
+   right: 20%;
+}
