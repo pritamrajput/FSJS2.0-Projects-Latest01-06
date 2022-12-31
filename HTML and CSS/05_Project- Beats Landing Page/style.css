@@ -242,3 +242,118 @@ border: #000000 4px solid
     color: #87898b;
    font-size: 0.9rem;
 }
+
+/* ***--- section case ---*** */
+.section__case{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+    gap: 30px;
+    padding-top: 5%;
+}
+.section__case__image__para{
+   display: flex; 
+   gap: 40px;
+   color: #ffffff;
+}
+.case__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case__image img{
+    width: 80%;
+}
+.case__para p{
+    font-size: 0.9rem;
+    color: var(--color-5);
+    line-height: 1.5rem;
+}
+.case__para__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case__btn{
+    display: flex;
+}
+.case__btn div img{
+   width: 18px;
+   height: 18px;
+}
+.case__btn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-0);
+    padding: 10px 20px;
+    color: var(--color-5);
+    border-radius: 5px;
+}
+.case__btn div:hover{
+   cursor: pointer;
+}
+.case__main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ***---immerse music---*** */
+.immerse__music{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 15%;
+    padding-top: 8%;
+}
+.immerse__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #0f0f10;
+    border-radius: 8px;
+    padding: 30px 20px;
+}
+.immerse__main__inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.immerse__headphone__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.immerse__headphone__image img{
+    width: 90%;
+}
+.immerse__buynow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+    padding: 10px 18px;
+    gap: 10px;
+    border-radius: 7px;
+}
+.immerse__music__para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.music__paragraph{
+    font-size: 0.9rem;
+    color: var(--color-5);
+    align-self: flex-start;
+}
+.immerse__buynow{
+    align-self: flex-start;
+}
