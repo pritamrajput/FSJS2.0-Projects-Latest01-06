@@ -357,3 +357,17 @@ border: #000000 4px solid
 .immerse__buynow{
     align-self: flex-start;
 }
+
+/* ***---choose your style---*** */
+.main__choose__style{
+    background-color: #000000;
+    padding: 30px 15%;  
+}
+.choose__style{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
