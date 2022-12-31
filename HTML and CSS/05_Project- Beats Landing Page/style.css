@@ -11,9 +11,14 @@
     --color-1: #f2f2f3;
     --color-3: #ffffff;
     --color-4: #000000;
+    --color-5: #87898b;
 }
-
+/* ***---main--container---*** */
+.main__container{
+    position: relative;
+}
 /* ****----navbar section----**** */
+
 nav{
     background-color: var(--color-4);
     display: flex;
@@ -44,7 +49,7 @@ nav{
 }
 .navbar__list ul li{
  padding: 6px 13px; 
- border-radius: 5px;
+ border: 3px solid #000000;
 }
 .navbar__list ul li a{
     text-decoration: none;
@@ -52,11 +57,9 @@ nav{
     font-weight: 500; 
 }
 .navbar__list ul li:hover{
- background-color: #ffffff;
  cursor: pointer;
-}
-.navbar__list ul li:hover a{
-   color: #000000;
+ box-shadow: inset 0 0 1em 0 #ffffff,0 0 0.6em 0 #ffffff;
+ border: 3px solid #ffffff;
 }
 .navbar__list button{
     background-color: var(--color-0);
@@ -70,6 +73,18 @@ nav{
 }
 
 /* ****----hero-section----**** */
+.headphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 14%;
+}
+.headphone img{
+    width: 100%;
+}
 .hero__section{
     background-color: #000000;
     padding: 20px 10%;
@@ -96,4 +111,134 @@ nav{
 .hero__header{
    position: relative;
    right: 20%;
+}
+.hero__section__para__bag{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 9.6%;
+}
+.hero__section__bag{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--color-0);
+    border-radius: 7px;
+    padding: 10px 12px;
+}
+.hero__section__bag:hover{
+ cursor: pointer;
+}
+.main__hero__section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.hero__section__sponsors{
+    display: grid;
+    grid-template-columns: 124px 124px 124px 124px;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5% 4%;
+}
+.section__sponsors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 59px;
+}
+.appleLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;  
+    border: #000000 4px solid
+    }
+.appleLogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.appleLogo:hover{
+ border: #66615B 4px solid;
+ box-shadow: inset 0 0 1.8em 0  #66615B, 0 0 0.6em 0 #66615B;
+}
+.spotifyLogo{
+padding: 8px;  
+border: #000000 4px solid
+}
+.spotifyLogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.spotifyLogo:hover{
+    border: #1ccc5b 4px solid;
+    box-shadow: inset 0 0 1.8em 0  #1ccc5b,0 0 0.6em 0 #1ccc5b;   
+}
+.youtubeLogo{
+    border: #000000 4px solid
+    }
+    .youtubeLogo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+.youtubeLogo:hover{
+    border: #ff0000 4px solid;
+    box-shadow: inset 0 0 1.8em 0  #ff0000, 0 0 0.6em 0 #ff0000;   
+}
+.amazonLogo{ 
+    border: #000000 4px solid
+    }
+.amazonLogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.amazonLogo:hover{
+    border: #FF9400 4px solid;
+    box-shadow: inset 0 0 1.8em 0  #FF9400, 0 0 0.6em 0 #FF9400;   
+}
+
+/* ***---spec section---*** */
+.section__specs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 10%;
+}
+.section__specs__actual{
+    display: flex;
+    gap: 30px;
+}
+.section__different__specs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.specs__2{
+    transform: translateX(-12%);
+}
+.specs__3{
+    transform: translateX(-12%);  
+}
+.specs__actual__headphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specs__actual__headphone img{
+    width: 95%;
+}
+.specs__1 p, .specs__2 p, .specs__3 p, .specs__4 p{
+    color: #87898b;
+   font-size: 0.9rem;
 }
