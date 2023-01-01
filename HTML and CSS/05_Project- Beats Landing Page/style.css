@@ -421,3 +421,110 @@ border: #000000 4px solid
 .style__price div:nth-child(2) img{
     width: 20px;
 }
+
+/* ***---footer---*** */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 13%;
+    padding-top: 8%;
+}
+.footer__main1{
+    display: flex;
+    gap: 4rem;
+}
+.footer__email__contactus{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-0);
+    border-radius: 8px;
+}
+.footer__email__contactus input{
+    background-color: var(--color-0);
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+}
+.footer__rightarrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+::placeholder { 
+    color: var(--color-3);
+  }
+.footer__subscribe{
+    padding: 8px 10px;
+    background-color: var(--color-4);
+    border-radius: 8px;
+}
+.footer__subscribe:hover{
+   cursor: pointer;
+}
+.footer__rightarrow img{
+    width: 18px;
+    height: 18px;
+}
+.footer__rightarrow p{
+    font-size: 0.85rem;
+}
+.footer__list1 h3 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+.footer__list1 ul li a{
+    text-decoration: none;
+    color: var(--color-5);
+}
+.footer__list2 h3 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+.footer__list2 ul li a{
+    text-decoration: none;
+    color: var(--color-5);
+}
+.footer__list1 ul li,.footer__list2 ul li {
+  list-style: none;
+  font-size: 0.9rem;
+}
+.footer__list1, .footer__list2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer__list1 ul, .footer__list2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer__main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 25px;
+}
+.footer__social__icons{
+    display: flex;
+    gap: 10px;
+}
+.footer__social__icons img{
+    cursor: pointer;
+}
+
+/* ***---end---*** */
+.end{
+    text-align: center;
+    background-color: var(--color-4);
+    color: #ffffff;
+    padding: 40px 5%;
+}
