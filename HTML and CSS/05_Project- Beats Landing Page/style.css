@@ -13,9 +13,13 @@
     --color-4: #000000;
     --color-5: #87898b;
 }
+body{
+overflow-x: hidden;
+}
 /* ***---main--container---*** */
 .main__container{
     position: relative;
+    overflow-x: hidden;
 }
 /* ****----navbar section----**** */
 
@@ -25,6 +29,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    position: relative;
 }
 .navbar__logo{
     display: flex;
@@ -608,7 +613,19 @@ footer{
 }
 @media(max-width:900px){
     .navbar__list ul{
-        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        top: 100%;
+        right:-100%;
+        width: 200px;
+        background-color: #000000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z-index: 20;
+    }
+    ul.move{
+        right: 2%;
     }
     .hamburger{
         display: none;
@@ -698,6 +715,13 @@ footer{
     .section__specs__actual{
         flex-direction: column-reverse;
     }
+    .section__case__image__para{
+        flex-direction: column;
+    }
+    .case__main{
+        text-align: center;
+        align-items: center;
+    }
 }
 @media(max-width:613px){
     .hero__header h1{
@@ -709,4 +733,87 @@ footer{
     .hero__beats img{
         width: 100%;
     }
+}
+@media(max-width:500px){
+    .hero__section__para__bag{
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        padding-top: 8%;
+    }
+    .main__hero__section{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__para__paragraph{
+        text-align: center;
+    }
+    .hero__para__paragraph p{
+        font-size: 0.8rem;
+    }
+    .headphone{
+        width: 24%;
+    }
+}
+@media(max-width:443px){
+    .choose___style__headphones{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:450px){
+    .hero__beats{
+        width: 220px;
+    }
+    .hero__header{
+        right: 15%;
+    }
+    .navbar__list
+    {
+        gap: 20px;
+    }
+    .hero__section{
+        padding: 20px 2%;
+    }
+    .footer__up__arrow{
+        top: 40%;
+        left: 5%;
+    }
+}
+@media(max-width:403px){
+    .hero__beats{
+        width: 200px;
+    }
+    .hero__section__onear{
+        padding-right: 0;
+    }
+    .hero__header{
+        right: 0;
+    }
+    .hero__section__para__bag{
+        padding-top: 14%;
+    }
+    .headphone{
+        width: 28%;
+    }
+    .specs__2{
+        transform: translateY(0);
+    }
+    .specs__3{
+        transform: translateY(0);
+    }
+    .section__different__specs{
+        align-items: center;
+    }
+    .specs__1, .specs__2,.specs__3, .specs__4{
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .choose__style__para{
+    width: 300px;
+   }
+   .choose__style__para img{
+    width: 100%;
+   }
 }
