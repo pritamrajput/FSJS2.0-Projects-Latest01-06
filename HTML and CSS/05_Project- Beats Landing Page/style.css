@@ -754,6 +754,21 @@ footer{
     .headphone{
         width: 24%;
     }
+    .specs__2{
+        transform: translateY(0);
+    }
+    .specs__3{
+        transform: translateY(0);
+    }
+    .section__different__specs{
+        align-items: center;
+    }
+    .specs__1, .specs__2,.specs__3, .specs__4{
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media(max-width:443px){
     .choose___style__headphones{
