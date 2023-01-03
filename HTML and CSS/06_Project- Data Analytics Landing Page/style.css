@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+:root{
+    --color-0:#722ed1;
+    --color-1:#e4f2ff;
+    --color-2:#f4f8ff;
+    --color-3:#f7f1ff;
+    --color-4:#8f59db;
+    --color-5:#7f8388;
+}
+.main__container{
+    position: relative;
+}
+
+/* ***---navbar---*** */
+.main__nav__hero{
+background: linear-gradient(175deg,#f4f8ff 5%, #e4f2ff 80%, #f4f8ff 30%);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.main__list__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main__list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.main__list ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.85rem;
+}
+.main__btn button{
+    padding: 10px 13px;
+    border: 1px solid var(--color-0);
+    border-radius: 100vw;
+    color: #8f59db;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+/* ***---hero-section---*** */
+.main__hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    padding-top: 7%;  
+}
+.main__hero__left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left__version{
+    display: flex;
+    background-color: var(--color-3);
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 100vw;
+}
+.left__version p a{
+    color: var(--color-4);
+    font-weight: 600;
+}
+.left__version p{
+  color: var(--color-4);
+  font-weight: 600;
+}
+.left__para p{
+    color: var(--color-5);
+}
+.left__hero__btn button:nth-child(1){
+    background-color: var(--color-0);
+    color: #f4f8ff;
+    border: 1px solid var(--color-0);
+    padding: 8px 17px;
+    border-radius: 100vw;
+}
+.left__hero__btn button:nth-child(2){
+    background-color: var(--color-2);
+    color: var(--color-0);
+    border: 1px solid var(--color-0);
+    padding: 8px 17px;
+    border-radius: 100vw;
+}
