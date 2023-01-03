@@ -10,9 +10,10 @@
     --color-0:#722ed1;
     --color-1:#e4f2ff;
     --color-2:#f4f8ff;
-    --color-3:#f7f1ff;
+    --color-3:#dfbff8;
     --color-4:#8f59db;
     --color-5:#7f8388;
+    --color-6:#fcf8ff;
 }
 .main__container{
     position: relative;
@@ -240,12 +241,79 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 60px;
+    background-color: var(--color-2);
+    padding-top: 8%;
 }
+.engineering__left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.engineering__left div:nth-child(1){
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 8px 14px;
+   border-radius: 100vw;
+   background-color:var(--color-3);
+  }
+.engineering__left div:nth-child(1) p{
+  color: #722ed1;
+  font-weight: 600;
+}
+.engineering__left div:nth-child(3){
+  color: var(--color-5);
+  font-weight: 600;
+   }
 .engineering__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 600px;
 }
 .engineering__right img{
  width: 100%;
+}
+
+/* CTO section */
+.cto__reviews{
+    background: linear-gradient(175deg, #f4f8ff 20%,#e5d6f0 20%,#e5d6f0, #e4f2ff , #e4f2ff 90%, #e4f2ff 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 12.5%;
+}
+.cto__remarks p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.cto__name p{
+    font-weight: 600;
+}
+.cto__line {
+    height: 2px;
+    background-color: hsl(255, 4%, 78%);
+    width: 65%;
+   
+}
+.cto__logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.cto__logo img{
+    width: 90px;
+}
+
+/* sign up section */
+.sign__up__section{
+    background: linear-gradient(175deg, #e4f2ff 25%, #f4f8ff 25%);
 }
 /* ***---Media__Queries---*** */
 @media(max-width:1220px){
@@ -253,6 +321,9 @@ nav{
         gap: 40px;
         padding: 20px 6.2%;
         padding-top: 8%;
+    }
+    .engineering__right{
+        width: 500px;
     }
 }
 @media (max-width:1100px){
@@ -276,6 +347,12 @@ nav{
     }
     .product__teams__right div:nth-child(3){
      font-size: 0.85rem;
+    }
+    .engineering__right{
+        width: 450px;
+    }
+    .engineering__teams{
+        gap: 30px;
     }
 }
 @media(max-width:1000px){
@@ -313,4 +390,14 @@ nav{
             align-items: center;
             text-align: center;
         }
+}
+
+@media(max-width:997px){
+    .engineering__teams{
+        flex-direction: column-reverse;
+    }
+    .engineering__left{
+        align-items: center;
+        text-align: center;
+    }
 }
