@@ -18,7 +18,7 @@
             <div class="main__logo">
                 <img src="./images/Logo.png" alt="logo">
             </div>
-            <div class="main__list__btn">
+            <div class="main__list__btn" id="main__list">
                 <div class="main__list">
                     <ul>
                         <li><a href="#">About</a></li>
@@ -30,6 +30,11 @@
                 <div class="main__btn">
                     <button>Start free trial</button>
                 </div>
+            </div>
+            <div class="hamburger" id="menu" onclick="onClickMenu()">
+                <div class="bar" id="bar__1"></div>
+                <div class="bar" id="bar__2"></div>
+                <div class="bar" id="bar__3"></div>
             </div>
         </nav>
 
@@ -156,12 +161,13 @@
         </div>
        </div>
 
+       <!-- sign up section -->
        <div class="sign__up__section">
          <div class="signup__left">
             <div class="signup__left__header">
                 <h2>See why the world's best</h2>
                 <h2>companies use Qubly to</h2>
-                <h2>become truly data-driven</h2>
+                <h2>become truly data-driven.</h2>
             </div>
             <div class="sign__up__trusted">
                 <div></div>
@@ -176,9 +182,91 @@
             </div>
          </div>
          <div class="signup__right">
-            
+            <div class="sign__form">
+                <p>Sign Up</p>
+                <input class="btn__input" type="button" value="Start Your free trial" style="text-align: center;">
+                <input class="btn__email" type="email" name="Email" id="" placeholder="Your primary email">
+                <input class="btn__pwd" type="password" name="" id="" placeholder="Password">
+                <input class="btn__repwd" type="password" name="" id="" placeholder="Re-type Password">
+                <p>OR</p>
+                <img src="./images/btn_google_signin_dark_normal_web@2x.svg" alt="google__button">
+                <div class="sign__line"></div>
+                <p>Already have an account ? <a href="#">Login</a></p>
+            </div>
          </div>
        </div>
+
+       <!-- footer -->
+       <footer>
+        <div class="footer__social__logo">
+            <div class="footer__logo1"><img src="./images/Logo.png" alt="logo"></div>
+            <div class="footer__para">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>consectetur adipisicing elit, sed</p>
+                <p>diam nonummy nibh euismod</p>
+                <p>tincident ut laoreet dolore magna</p>
+                <p>aliquam-erat volupat ut wisi enim</p>
+                <p>ad minim</p>
+            </div>
+            <div class="footer__social__icon">
+                <img src="./images/facebook-icon.svg" alt="facebook-icon">
+                <img src="./images/twitter-3.svg" alt="twitter-3">
+                <img src="./images/instagram-2016.svg" alt="instagram-2016">
+            </div>
+        </div>
+        <div class="footer__list">
+            <div class="list__1">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">connections</a></li>
+                    <li><a href="#">Protocols</a></li>
+                    <li><a href="#">Personas</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">GDPR</a></li>
+                </ul>
+            </div>
+            <div class="list__2">
+                <h4>For Developers</h4>
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Open Source</a></li>
+                    <li><a href="#">Engineering Team</a></li>
+                </ul>
+            </div>
+            <div class="list__3">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="list__4">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Bulletins</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Portal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__newsletter">
+            <h4>Newsletter</h4>
+            <div>
+                <input type="email" name="" id="" placeholder="Email">
+                <img src="./images/Icon ionic-ios-send.png" alt="ionic-ios-send">
+            </div>
+        </div>
+       </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
